@@ -18,8 +18,14 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@nestjs/common": "^9.0.7",
+    "@nestjs/core": "^9.0.7",
+    "@nestjs/typeorm": "^9.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "typeorm": "^0.3.7",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -27,6 +33,7 @@
     "@angular/cli": "~14.1.0",
     "@angular/compiler-cli": "^14.1.0",
     "@types/jasmine": "~4.0.0",
+    "@types/node": "^18.6.3",
     "autoprefixer": "^10.4.8",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",

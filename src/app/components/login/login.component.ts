@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent {
     password: ['h4ck3rman=>Pa$$w0rd',[ Validators.required, Validators.minLength(8)]]
   });
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
 
    }
 
@@ -23,5 +24,7 @@ export class LoginComponent {
     console.log('Password: ', form.value.password);    
     console.log('Valid?: ', form.valid);
     console.log(form);
+
+    this.router.navigate(['newPage']);
   }
 }

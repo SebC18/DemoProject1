@@ -6,7 +6,7 @@ import { Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
 @Module({
-  imports: [UsersModule, PassportModule.register({ session: true})],
-  providers: [AuthService, LocalStrategy, SessionSerializer]
+  imports: [UsersModule, PassportModule],
+  providers: [AuthService, LocalStrategy]
 })
 export class AuthModule {}

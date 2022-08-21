@@ -15,7 +15,6 @@ export class AppController {
   }
 
   // GET /protected
-  @UseGuards(AuthenticatedGuard)
   @Get('protected')
   getHello(@Request() req): string {
     return req.user;
